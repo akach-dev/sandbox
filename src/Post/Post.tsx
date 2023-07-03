@@ -5,7 +5,7 @@ export const Post = () => {
                 Post22
             </h2>
             <p>
-                11
+                112
             </p>
         </div>
     )
