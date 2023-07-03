@@ -2,7 +2,7 @@ export const Test = () => {
   return (
       <div>
           <h2>
-              Test
+              Test2
           </h2>
       </div>
   )
