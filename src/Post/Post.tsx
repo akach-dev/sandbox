@@ -11,7 +11,7 @@ export const Post = () => {
                 1
             </p>
             <p>
-                2
+                3
             </p>
         </div>
     )
