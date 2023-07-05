@@ -14,10 +14,10 @@ export const Test = () => {
           Dev branch commit 3
         </div>
         <div>
-          Develop/popup commit 1
+          Develop/login branch commit 1
         </div>
         <div>
-          Develop/popup commit 2
+          Develop/login branch commit 2
         </div>
       </>
   )
