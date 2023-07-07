@@ -1,9 +1,9 @@
 export const User = () => {
-
   const sum = (a: number, b: number) => {
     return a + b
   }
 
+  console.log(isPalindrome('ada'))
 
   return (
       <div>
@@ -13,7 +13,6 @@ export const User = () => {
         <button onClick={() => sum(2, 3)}>
           Click
         </button>
-
       </div>
   )
 }
