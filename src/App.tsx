@@ -1,28 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {User} from "./User/User";
+
+export function User() {
+  return (
+      <div>
+        <h3>What to learn</h3>
+        <div>
+          <input/>
+          <button>+</button>
+        </div>
+        <ul>
+          <li><input checked={true} type="checkbox"/>CSS & HTML</li>
+          <li><input checked={true} type="checkbox"/>JS</li>
+          <li><input checked={false} type="checkbox"/>REACT</li>
+          <div>
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
+          </div>
+        </ul>
+      </div>
+  )
+}
 
 function App() {
   return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <p>
-            title
-          </p>
-          <User/>
-          <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <User/>
       </div>
   );
 }
 
-export default App;
+export default App
