@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6597602a-49b7-4774-b2ba-5ae199eaa6f2" name="Changes" comment="done second lesson todo(function component)">
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="00e16eb8-691a-4e17-80f3-926093c3e281" />
+        <option name="url" value="https://github.com/akach-dev/sandbox.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2SFpvhknQ5VnGz1w44hU5mrY1Qw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "code.cleanup.on.save": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "/Users/aleksandrkacan/Desktop/it-incubator/sandbox/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/User.tsx" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6597602a-49b7-4774-b2ba-5ae199eaa6f2" name="Changes" comment="" />
+      <created>1688752416506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688752416506</updated>
+      <workItem from="1688752418043" duration="5960000" />
+      <workItem from="1688759133683" duration="1552000" />
+      <workItem from="1688799548988" duration="4076000" />
+      <workItem from="1688831852807" duration="3084000" />
+      <workItem from="1688837804836" duration="62000" />
+      <workItem from="1688914429380" duration="7743000" />
+    </task>
+    <task id="LOCAL-00001" summary="add first gist">
+      <option name="closed" value="true" />
+      <created>1688759008319</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688759008319</updated>
+    </task>
+    <task id="LOCAL-00002" summary="delete App.test">
+      <option name="closed" value="true" />
+      <created>1688759176009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688759176009</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updeate">
+      <option name="closed" value="true" />
+      <created>1688803187080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688803187080</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updeate 19:07">
+      <option name="closed" value="true" />
+      <created>1688832450044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688832450044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="up todo">
+      <option name="closed" value="true" />
+      <created>1688837827061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688837827061</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add todo">
+      <option name="closed" value="true" />
+      <created>1688920157203</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688920157203</updated>
+    </task>
+    <task id="LOCAL-00007" summary="done second lesson todo(function component)">
+      <option name="closed" value="true" />
+      <created>1688921584925</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688921584925</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done second lesson todo(function component)">
+      <option name="closed" value="true" />
+      <created>1688921768722</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688921768722</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add first gist" />
+    <MESSAGE value="delete App.test" />
+    <MESSAGE value="updeate" />
+    <MESSAGE value="updeate 19:07" />
+    <MESSAGE value="up todo" />
+    <MESSAGE value="add todo" />
+    <MESSAGE value="done second lesson todo(function component)" />
+    <option name="LAST_COMMIT_MESSAGE" value="done second lesson todo(function component)" />
+  </component>
+</project>
