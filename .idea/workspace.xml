@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6597602a-49b7-4774-b2ba-5ae199eaa6f2" name="Changes" comment="add switch case">
+    <list default="true" id="6597602a-49b7-4774-b2ba-5ae199eaa6f2" name="Changes" comment="add .idea to ignoring-files">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1688799548988" duration="4076000" />
       <workItem from="1688831852807" duration="3084000" />
       <workItem from="1688837804836" duration="62000" />
-      <workItem from="1688914429380" duration="7901000" />
+      <workItem from="1688914429380" duration="7952000" />
     </task>
     <task id="LOCAL-00001" summary="add first gist">
       <option name="closed" value="true" />
@@ -176,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688922988686</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add .idea to ignoring-files">
+      <option name="closed" value="true" />
+      <created>1688923055813</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688923055813</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +210,7 @@
     <MESSAGE value="add todo" />
     <MESSAGE value="done second lesson todo(function component)" />
     <MESSAGE value="add switch case" />
-    <option name="LAST_COMMIT_MESSAGE" value="add switch case" />
+    <MESSAGE value="add .idea to ignoring-files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .idea to ignoring-files" />
   </component>
 </project>
