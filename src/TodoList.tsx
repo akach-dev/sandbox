@@ -34,6 +34,7 @@ export function TodoList({title, tasks, removeTask, filterHandler}: PropsType) {
           <button onClick={() => filterHandler('completed')}>Completed</button>
         </div>
 
+
       </div>
   )
 }
