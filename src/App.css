@@ -1,8 +1,22 @@
 .App {
     padding: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.App > div {
-    margin-right: 50px;
+.App * > :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+li button {
+    margin-left: 10px;
 }
