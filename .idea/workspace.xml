@@ -94,7 +94,7 @@
       <workItem from="1688799548988" duration="4076000" />
       <workItem from="1688831852807" duration="3084000" />
       <workItem from="1688837804836" duration="62000" />
-      <workItem from="1688914429380" duration="7985000" />
+      <workItem from="1688914429380" duration="8119000" />
     </task>
     <task id="LOCAL-00001" summary="add first gist">
       <option name="closed" value="true" />
@@ -192,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688923088853</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add .idea to ignoring-files">
+      <option name="closed" value="true" />
+      <created>1688923116568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688923116568</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
