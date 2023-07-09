@@ -17,11 +17,13 @@ export function App() {
   }
   const filterHandler = (value: FilterValuesType) => setFilter(value)
   let taskForTodoList = tasks
-  if (filter === 'active') {
-    taskForTodoList = tasks.filter(task => task.isDone)
-  }
-  if (filter === 'completed') {
-    taskForTodoList = tasks.filter(task => !task.isDone)
+  switch (filter) {
+    case 'active':
+      taskForTodoList = tasks.filter(task => task.isDone)
+      break;
+    case 'completed':
+      taskForTodoList = tasks.filter(task => !task.isDone)
+      break;
   }
   return (
       <div className="App">
