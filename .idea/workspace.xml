@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6597602a-49b7-4774-b2ba-5ae199eaa6f2" name="Changes" comment="add .idea to ignoring-files">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <workItem from="1688799548988" duration="4076000" />
       <workItem from="1688831852807" duration="3084000" />
       <workItem from="1688837804836" duration="62000" />
-      <workItem from="1688914429380" duration="8119000" />
+      <workItem from="1688914429380" duration="8322000" />
     </task>
     <task id="LOCAL-00001" summary="add first gist">
       <option name="closed" value="true" />
@@ -200,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688923116568</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add .idea to ignoring-files">
+      <option name="closed" value="true" />
+      <created>1688923250120</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688923250120</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
