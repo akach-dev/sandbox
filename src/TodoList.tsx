@@ -38,6 +38,7 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask}: Pro
           />
 
           <button onClick={addTaskHandler}>+</button>
+          
         </div>
         <ul>
           {
