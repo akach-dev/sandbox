@@ -27,6 +27,9 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask}: Pro
       setNewTitleTask('')
     }
   }
+  const onAllFilterHandler = () => filterHandler('all')
+  const onActiveFilterHandler = () => filterHandler('active')
+  const onCompletedFilterHandler = () => filterHandler('completed')
   return (
       <div>
         <h3>{title}</h3>
@@ -36,21 +39,24 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask}: Pro
               onChange={onChangeHandler}
               onKeyDown={handleKeyPress}
           />
-
           <button onClick={addTaskHandler}>+</button>
-          
         </div>
         <ul>
           {
-            tasks.map(task => <li key={task.id}><input checked={task.isDone} type="checkbox"/>{task.title}
-              <button onClick={() => removeTask(task.id)}>x</button>
-            </li>)
+            tasks.map(task => {
+              const removeTaskHandler = () => removeTask(task.id)
+              return (
+                  <li key={task.id}><input checked={task.isDone} type="checkbox"/>{task.title}
+                    <button onClick={removeTaskHandler}>x</button>
+                  </li>
+              )
+            })
           }
         </ul>
         <div>
-          <button onClick={() => filterHandler('all')}>All</button>
-          <button onClick={() => filterHandler('active')}>Active</button>
-          <button onClick={() => filterHandler('completed')}>Completed</button>
+          <button onClick={onAllFilterHandler}>All</button>
+          <button onClick={onActiveFilterHandler}>Active</button>
+          <button onClick={onCompletedFilterHandler}>Completed</button>
         </div>
       </div>
   )
