@@ -18,6 +18,18 @@ export function App() {
   }
   const addTask = (value: string) => setTasks([...tasks, {id: v1(), title: value, isDone: false}])
   const filterHandler = (value: FilterValuesType) => setFilter(value)
+  const changeStatus = (id: string) => {
+    setTasks(
+        tasks.map(
+            task => {
+              if (task.id !== id) return task;
+              return {
+                ...task,
+                isDone: !task.isDone
+              }
+            })
+    )
+  }
   let taskForTodoList = tasks
   switch (filter) {
     case 'active':
@@ -30,12 +42,12 @@ export function App() {
   return (
       <div className="App">
         <TodoList
+            changeStatus={changeStatus}
             addTask={addTask}
             filterHandler={filterHandler}
             removeTask={removeTask}
             tasks={taskForTodoList}
             title={'What to learn'}/>
-
       </div>
   );
 }

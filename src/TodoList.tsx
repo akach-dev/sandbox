@@ -12,9 +12,10 @@ type PropsType = {
   removeTask: (id: string) => void
   filterHandler: (value: FilterValuesType) => void
   addTask: (value: string) => void
+  changeStatus: (id: string) => void
 }
 
-export function TodoList({title, tasks, removeTask, filterHandler, addTask}: PropsType) {
+export function TodoList({title, tasks, removeTask, filterHandler, addTask, changeStatus}: PropsType) {
   const [newTitleTask, setNewTitleTask] = useState('')
   const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => setNewTitleTask(e.target.value)
   const addTaskHandler = () => {
@@ -24,7 +25,7 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask}: Pro
     }
   }
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.code === 'Enter') {
+    if (e.code === 'Enter' && newTitleTask.trim().length) {
       addTask(newTitleTask)
       setNewTitleTask('')
     }
@@ -47,8 +48,10 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask}: Pro
           {
             tasks.map(task => {
               const removeTaskHandler = () => removeTask(task.id)
+              const onChangeStatusHandler = () => changeStatus(task.id)
               return (
-                  <li key={task.id}><input checked={task.isDone} type="checkbox"/>{task.title}
+                  <li key={task.id}><input onChange={onChangeStatusHandler} checked={task.isDone}
+                                           type="checkbox"/>{task.title}
                     <button onClick={removeTaskHandler}>x</button>
                   </li>
               )
