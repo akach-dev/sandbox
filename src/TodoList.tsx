@@ -18,8 +18,10 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask}: Pro
   const [newTitleTask, setNewTitleTask] = useState('')
   const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => setNewTitleTask(e.target.value)
   const addTaskHandler = () => {
-    addTask(newTitleTask)
-    setNewTitleTask('')
+    if (newTitleTask.trim().length) {
+      addTask(newTitleTask)
+      setNewTitleTask('')
+    }
   }
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.code === 'Enter') {
