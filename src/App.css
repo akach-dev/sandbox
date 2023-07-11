@@ -2,13 +2,12 @@
     padding: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 
 .App * > :not(:last-child) {
     margin-bottom: 10px;
 }
+
 
 ul, li {
     list-style: none;
@@ -17,6 +16,16 @@ ul, li {
 
 }
 
+li {
+    display: flex;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
 li button {
     margin-left: 10px;
+}
+
+.delete {
+    color: red;
 }

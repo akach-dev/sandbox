@@ -50,9 +50,13 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask, chan
               const removeTaskHandler = () => removeTask(task.id)
               const onChangeStatusHandler = () => changeStatus(task.id)
               return (
-                  <li key={task.id}><input onChange={onChangeStatusHandler} checked={task.isDone}
-                                           type="checkbox"/>{task.title}
-                    <button onClick={removeTaskHandler}>x</button>
+                  <li key={task.id}>
+                    <input
+                        onChange={onChangeStatusHandler}
+                        checked={task.isDone}
+                        type="checkbox"/>
+                    <span>{task.title}</span>
+                    <span className={'delete'} onClick={removeTaskHandler}>&times;</span>
                   </li>
               )
             })

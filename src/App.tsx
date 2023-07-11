@@ -25,9 +25,10 @@ export function App() {
               if (task.id !== id) return task;
               return {
                 ...task,
-                isDone: !task.isDone
+                isDone: !task.isDone,
               }
-            })
+            }
+        )
     )
   }
   let taskForTodoList = tasks
