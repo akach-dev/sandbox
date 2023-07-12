@@ -15,8 +15,6 @@ export function App() {
   ]);
   const [filter, setFilter] = useState<FilterValuesTypes>("all");
 
-
-
   const addTask = (value: string) => {
     setTasks([
       ...tasks,
@@ -27,8 +25,11 @@ export function App() {
       },
     ]);
   };
+
   const removeTask = (id: string) => setTasks(tasks.filter((task) => task.id !== id));
+
   const filterTasks = (value: FilterValuesTypes) => setFilter(value);
+
   const changeStatus = (id: string) => {
     setTasks(
         tasks.map((task) => {
