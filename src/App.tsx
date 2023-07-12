@@ -14,6 +14,9 @@ export function App() {
     {id: v1(), title: "ReduxToolkit", isDone: false},
   ]);
   const [filter, setFilter] = useState<FilterValuesTypes>("all");
+
+
+
   const addTask = (value: string) => {
     setTasks([
       ...tasks,
