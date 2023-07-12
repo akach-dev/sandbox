@@ -32,6 +32,7 @@ export function TodoList({tasks, addTask, removeTask, filterTasks, changeStatus,
   };
   const onAllFilterHandler = () => filterTasks("all");
   const onActiveFilterHandler = () => filterTasks("active");
+
   const onCompletedFilterHandler = () => filterTasks("completed");
   return (
       <div>
