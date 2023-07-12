@@ -53,6 +53,7 @@ export function App() {
             removeTask={removeTask}
             filterTasks={filterTasks}
             changeStatus={changeStatus}
+            title={'What to learn'}
         />
       </div>
   );

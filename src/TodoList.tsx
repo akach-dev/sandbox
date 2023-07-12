@@ -7,6 +7,7 @@ export type TaskType = {
   isDone: boolean;
 };
 type PropTypes = {
+  title: string
   tasks: TaskType[];
   addTask: (value: string) => void;
   removeTask: (value: string) => void;
@@ -14,7 +15,7 @@ type PropTypes = {
   changeStatus: (id: string) => void;
 };
 
-export function TodoList({tasks, addTask, removeTask, filterTasks, changeStatus}: PropTypes) {
+export function TodoList({tasks, addTask, removeTask, filterTasks, changeStatus, title}: PropTypes) {
   const [titleTask, setTitleTask] = useState("");
   const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => setTitleTask(e.currentTarget.value);
   const onKeyDownHandler = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -34,7 +35,7 @@ export function TodoList({tasks, addTask, removeTask, filterTasks, changeStatus}
   const onCompletedFilterHandler = () => filterTasks("completed");
   return (
       <div>
-        <h1>What to learn</h1>
+        <h1>{title}</h1>
         <div>
           <input
               value={titleTask}
