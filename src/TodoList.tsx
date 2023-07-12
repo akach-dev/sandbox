@@ -1,66 +1,69 @@
-import React, {ChangeEvent, useState} from "react";
-import {FilterValuesType} from "./App";
+import {ChangeEvent, KeyboardEvent, useState} from "react";
+import {FilterValuesTypes} from "./App";
 
 export type TaskType = {
-  id: string
-  title: string
-  isDone: boolean
-}
-type PropsType = {
-  title: string
+  id: string;
+  title: string;
+  isDone: boolean;
+};
+type PropTypes = {
   tasks: TaskType[];
-  removeTask: (id: string) => void
-  filterHandler: (value: FilterValuesType) => void
-  addTask: (value: string) => void
-  changeStatus: (id: string) => void
-}
+  addTask: (value: string) => void;
+  removeTask: (value: string) => void;
+  filterTasks: (value: FilterValuesTypes) => void;
+  changeStatus: (id: string) => void;
+};
 
-export function TodoList({title, tasks, removeTask, filterHandler, addTask, changeStatus}: PropsType) {
-  const [newTitleTask, setNewTitleTask] = useState('')
-  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => setNewTitleTask(e.target.value)
+export function TodoList({tasks, addTask, removeTask, filterTasks, changeStatus}: PropTypes) {
+  const [titleTask, setTitleTask] = useState("");
+  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => setTitleTask(e.currentTarget.value);
+  const onKeyDownHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.code === "Enter" && titleTask.trim().length) {
+      addTask(titleTask);
+      setTitleTask("");
+    }
+  };
   const addTaskHandler = () => {
-    if (newTitleTask.trim().length) {
-      addTask(newTitleTask)
-      setNewTitleTask('')
+    if (titleTask.trim().length) {
+      addTask(titleTask);
+      setTitleTask("");
     }
-  }
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.code === 'Enter' && newTitleTask.trim().length) {
-      addTask(newTitleTask)
-      setNewTitleTask('')
-    }
-  }
-  const onAllFilterHandler = () => filterHandler('all')
-  const onActiveFilterHandler = () => filterHandler('active')
-  const onCompletedFilterHandler = () => filterHandler('completed')
+  };
+  const onAllFilterHandler = () => filterTasks("all");
+  const onActiveFilterHandler = () => filterTasks("active");
+  const onCompletedFilterHandler = () => filterTasks("completed");
   return (
       <div>
-        <h3>{title}</h3>
+        <h1>What to learn</h1>
         <div>
           <input
-              value={newTitleTask}
+              value={titleTask}
               onChange={onChangeHandler}
-              onKeyDown={handleKeyPress}
+              onKeyDown={onKeyDownHandler}
           />
           <button onClick={addTaskHandler}>+</button>
         </div>
         <ul>
-          {
-            tasks.map(task => {
-              const removeTaskHandler = () => removeTask(task.id)
-              const onChangeStatusHandler = () => changeStatus(task.id)
-              return (
-                  <li key={task.id}>
-                    <input
-                        onChange={onChangeStatusHandler}
-                        checked={task.isDone}
-                        type="checkbox"/>
-                    <span>{task.title}</span>
-                    <span className={'delete'} onClick={removeTaskHandler}>&times;</span>
-                  </li>
-              )
-            })
-          }
+          {tasks.map((task) => {
+            const removeTaskHandler = () => removeTask(task.id);
+            const changeStatusHandler = () => changeStatus(task.id);
+            return (
+                <li key={task.id}>
+                  <input
+                      type="checkbox"
+                      checked={task.isDone}
+                      onChange={changeStatusHandler}
+                  />
+                  <span>{task.title}</span>
+                  <span
+                      className="delete"
+                      onClick={removeTaskHandler}
+                  >
+                &times;
+              </span>
+                </li>
+            );
+          })}
         </ul>
         <div>
           <button onClick={onAllFilterHandler}>All</button>
@@ -68,5 +71,5 @@ export function TodoList({title, tasks, removeTask, filterHandler, addTask, chan
           <button onClick={onCompletedFilterHandler}>Completed</button>
         </div>
       </div>
-  )
+  );
 }
