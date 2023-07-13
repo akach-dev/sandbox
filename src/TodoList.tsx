@@ -68,7 +68,6 @@ export function TodoList({tasks, addTask, removeTask, filterTasks, changeStatus,
           })}
         </ul>
         <div>
-          <span>What</span>
           <button onClick={onAllFilterHandler}>All</button>
           <button onClick={onActiveFilterHandler}>Active</button>
           <button onClick={onCompletedFilterHandler}>Completed</button>
